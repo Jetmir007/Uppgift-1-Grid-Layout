@@ -19,6 +19,7 @@ body{
     "img img img img";
     gap: 10px;
     grid-template-rows: 120px 1fr 300px;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
 }
 .container *{
 min-height: 100px;
@@ -34,6 +35,7 @@ header{
     text-align: center;
     font-style: oblique;
     max-height: 120px;
+    margin: 5px;
 }
 main{
     grid-area: main;
@@ -46,6 +48,7 @@ aside{
     background-color: black;
     font-size: 200%;
     padding: 8px;
+    margin: 5px;
 }
 aside:hover{
     background-color: #717375;
@@ -54,8 +57,8 @@ img{
     grid-area: img;
     min-height: 300px;
     background-color: #000000;
-    width: 100vw;
     max-height: 300px;
+    width: 100vw;
 }
 #p1{
     font-style: italic;
@@ -67,4 +70,13 @@ img{
     font-size: 2em;
     margin-left: 45%;
     border: 8px groove gray;
+}
+#A{
+    width: 100%;
+}
+aside:hover > #A{
+    visibility: visible;
+}
+aside > #A{
+    visibility: hidden;
 }
